@@ -1,0 +1,9 @@
+Liskov Substitution Principle :
+The Liskov Substitution principle was introduced by Barbara Liskov in her conference keynote “Data abstraction” in 1987. Barbara Liskov and Jeannette Wing formulated the principle succinctly in a 1994 paper as follows:
+
+Let f(x) be a property provable about objects x of type T. Then f(y) should be true for objects y of type S where S is a subtype of T.
+The human-readable version repeats pretty much everything that Bertrand Meyer already has said, but it relies totally on a type-system:
+
+1. Preconditions cannot be strengthened in a subtype.
+2. Postconditions cannot be weakened in a subtype.
+3. Invariants of the supertype must be preserved in a subtype.
