@@ -1,0 +1,24 @@
+S.O.L.I.D is an for the first five object-oriented design(OOD) principles by Robert C. Martin, popularly known as Uncle Bob.
+These principles, when combined together, make it easy for a programmer to develop software that are easy to maintain and extend. 
+They also make it easy for developers to avoid code smells, easily refactor code, and are also a part of the adaptive software development.
+S.O.L.I.D stands for:
+S - Single-responsiblity principle
+O - Open-closed principle
+L - Liskov substitution principle
+I - Interface segregation principle
+D - Dependency Inversion Principle
+
+O - Open-closed principle:In this objects or entities should be open for extension, but closed for modification.
+This simply means that a class should be easily extendable without modifying the class itself.You should be able to extend a class’s behavior, without 
+modifying it.This principle is the foundation for building code that is maintainable and reusable.
+How can something be open and closed?! A class follows the OCP if it fulfills these two criteria:
+Open for extension
+This ensures that the class behavior can be extended. As requirements change, we should be able to make a class behave in new and different ways, 
+to meet the needs of the new requirements.
+Closed for modification
+The source code of such a class is set in stone, no one is allowed to make changes to the code.
+How do we achieve this?
+Through abstractions. In order to be able to extend the behavior of a class without changing a single line of code, we need to make abstractions. 
+For example, if we had a system that works with different shapes as classes, we would probably have classes like Circle, Rectangle, etc. 
+In order for a class that depends on one of these classes to implement OCP, we need to introduce a Shape interface/class. Then, wherever we had 
+Dependency Injection, we would inject a Shape instance instead of an instance of a lower-level class. This would give us the luxury of adding new shapes without having to change the dependent classes source code.
